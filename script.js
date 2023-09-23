@@ -1,5 +1,5 @@
 const pageName = window.location.pathname;
-const isSignUpPage = pageName == '/signup-ui' || pageName == '/signup-ui/index.html';
+const isSignUpPage = pageName == '/signup-ui' || pageName == '/signup-ui/' || pageName == '/signup-ui/index.html';
 
 /**
  * Check user token
