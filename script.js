@@ -1,5 +1,5 @@
 const pageName = window.location.pathname;
-const isSignUpPage = pageName == '/' || pageName == '/index.html';
+const isSignUpPage = pageName == '/signup-ui' || pageName == '/signup-ui/index.html';
 
 /**
  * Check user token
@@ -8,7 +8,7 @@ const userInfo = window.localStorage.getItem("--USER-INFO--");
 const message =  window.localStorage.getItem("--USER-MESSAGE");
 
 if (userInfo && isSignUpPage) {
-    window.location.href = `./profile.html`
+    window.location.href = `https://wtricks.github.io/signup-ui/profile.html`
 } else if (!userInfo && !isSignUpPage) {
     window.location.href = `https://wtricks.github.io/signup-ui/`
 }
