@@ -1,0 +1,129 @@
+:root {
+    --bg: #F8FAFC;
+    --bg2: #fff;
+    --text: #333333;
+    --main: #625BF7;
+    --main-gradient: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+    --font-size: 14px;
+    --font-family: 'Poppins', sans-serif;
+    --secondry: #5BF7DB;
+    --card: #fff;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+    color: var(--text);
+    background: var(--bg);
+    overflow: hidden;
+}
+
+.back {
+    position: absolute;
+    content: '';
+    height: 150%;
+    width: 150%;
+    top: 55%;
+    left: -40%;
+    background-color: var(--bg2);
+    transform: rotateZ(10deg);
+}
+
+.container {
+    z-index: 100;
+    max-width: 340px;
+    width: 100%;
+}
+
+.alert {
+    font-weight: 600;
+    text-align: center;
+    color: var(--main);
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: var(--card);
+    padding: 2.5rem;
+    box-shadow: 0px 6px 8px 0px #0000000D;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.card label {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text);
+    margin-bottom: 0.3rem;
+}
+
+.card .welcome-message {
+    font-size: 0.8rem;
+    color: #757575;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.card input {
+    padding: 0.5rem 0.7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    outline: 0;
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+}
+
+.btn {
+    background: var(--main-gradient);
+    color: #fff;
+    padding: 0.7rem !important;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.form-alert {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #463EEA;
+}
+
+.bottom-line {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.bottom-line a {
+    color: #463EEA;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.bottom-line a:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
